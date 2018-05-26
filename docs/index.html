@@ -15,7 +15,53 @@
 		<div id="root" class="container">
 			<div><h5 class="center-align">Frontends technologies test</h5></div>
 			<div class="divider"></div>
-			<p>Hi</p>
+			<div class="row card-panel">
+				<div class="input-field col s3">
+					<input id="what" placeholder="What" type="text" class="validate">
+				</div>
+				<div class="input-field col s3">
+					<input id="When" type="text" class="validate">
+					<label for="when">When</label>
+				</div>
+				<div class="col s3">
+					<label>
+						<input id="public" type="checkbox" />
+						<span for="public">Public</span>
+					</label>
+				</div>
+				<div class="col s3">
+					<button class="btn waves-effect waves-light orange">
+						Add<i class="material-icons right">send</i>
+					</button>			
+				</div>
+			</div>
+			<div class="row card-panel">
+                <table class="responsive-table">
+                	<thead>
+                		<tr class="blue lighten-5">
+                			<th>What</th>
+                			<th>When</th>
+                			<th>Public</th>
+                		</tr>
+                	</thead>
+                	<tbody>
+                        <tr>
+                        	<td>Create a project</td>
+                        	<td>12.12.2018</td>
+                        	<td>
+								<label>
+									<input type="checkbox" checked="checked" disabled="disabled"/><span></span>
+								</label>
+							</td>
+                        </tr>
+                        <tr>
+                        	<td>By a car</td>
+                        	<td>31.12.2018</td>
+                        	<td></td>
+                        </tr>
+                	</tbody>
+                </table>
+			</div>
 			<div class="divider"></div>
 			<div class="center-align">by LMars</div>
 		</div>
