@@ -4,7 +4,7 @@
 		<meta charset="UTF-8"/>
 
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/css/materialize.min.css"/>
+		<link rel="stylesheet" type="text/css" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"/>
 
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -13,39 +13,71 @@
 	</head>
 	<body>
 		<header>
-			<div class="container">
-				<nav>
-					<div class="nav-wrapper">
-						<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-						<a href="#" class="brand-logo center">Frontend Test</a>
-						<ul class="right hide-on-med-and-down">
-							<li><a href="../">Materialize</a></li>
-							<li class="active"><a href="#">MDC Web</a></li>
-						</ul>
-					</div>
-				</nav>
-				<ul id="nav-mobile" class="sidenav">
-					<li><a href="../">Materialize</a></li>
-					<li class="active"><a href="#">MDC Web</a></li>
-				</ul>
-			</div>
 		</header>
 
 		<main>
-			<div id="root" class="container">
-				<div class="card-panel">
-					<p class="center-align">Under construction</p>
+			<div id="root">
+				<div class="mdc-card">
+					<div class="mdc-text-field">
+						<input type="text" id="what" placeholder="What" class="mdc-text-field__input">
+					</div>
+					<div class="mdc-text-field">
+						<input type="text" id="when" class="mdc-text-field__input">
+						<label class="mdc-floating-label" for="when">When</label>
+						<div class="mdc-line-ripple"></div>
+					</div>
+					<div class="mdc-form-field">
+						<div class="mdc-checkbox">
+							<input type="checkbox"
+								   class="mdc-checkbox__native-control"
+								   id="public"/>
+							<div class="mdc-checkbox__background">
+								<svg class="mdc-checkbox__checkmark"
+									 viewBox="0 0 24 24">
+									<path class="mdc-checkbox__checkmark-path"
+										  fill="none"
+										  stroke="white"
+										  d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+								</svg>
+								<div class="mdc-checkbox__mixedmark"></div>
+							</div>
+						</div>
+						<label for="public">Public</label>
+					</div>
+					<div>
+						<button class="mdc-button mdc-button--raised">
+							<i class="material-icons mdc-button__icon" aria-hidden="true">send</i>Add
+						</button>
+					</div>
+				</div>
+				<div class="mdc-card">
+					<ul class="mdc-list" aria-orientation="vertical">
+						<li class="mdc-list-item">
+							<span class="mdc-list-item__text">
+								Create a project <i class="material-icons" aria-hidden="true" title="Public">check</i>
+								<span class="mdc-list-item__secondary-text">
+									12.12.2018
+								</span>
+							</span>
+						</li>
+						<li class="mdc-list-item">
+							<span class="mdc-list-item__text">
+								Buy a car
+								<span class="mdc-list-item__secondary-text">
+									31.12.2018
+								</span>
+							</span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</main>
 
-		<footer class="page-footer white black-text">
-			<div class="container">
-				<div class="center-align">by LMars</div>
-			</div>
+		<footer>
 		</footer>
+
 		<!--JavaScript at end of body for optimized loading-->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.1/js/materialize.min.js"></script>
+		<script type="text/javascript" src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 	</body>
 </html>

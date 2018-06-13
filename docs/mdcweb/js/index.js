@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded', function()
 {
-	var elems = document.querySelectorAll('.sidenav');
-	var instances = M.Sidenav.init(elems);
+	document.querySelectorAll('.mdc-text-field').forEach(function(element)
+	{
+		mdc.textField.MDCTextField.attachTo(element);
+	});
+
+	var formField = mdc.formField.MDCFormField.attachTo(document.querySelector('.mdc-form-field'));
+	var checkbox = mdc.checkbox.MDCCheckbox.attachTo(document.querySelector('.mdc-checkbox'));
+	formField.input = checkbox;
+
+	mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-button'));
 });
